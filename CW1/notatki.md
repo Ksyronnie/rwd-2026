@@ -6,8 +6,8 @@
 
 ## Ćwiczenie 1
 
-- Po ilu minutach zmiana pojawiła się na stronie: ...
-- Dokonane zmiany:
+- Po ilu minutach zmiana pojawiła się na stronie: 1
+- Dokonane zmiany: Wpisanie mojego imienia oraz zmiana zdania na własne.
 
 
 
