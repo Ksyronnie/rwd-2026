@@ -92,3 +92,30 @@ body {
 /* ETAP 4 (dla chętnych) ---------------------------------------------------
    TODO: tryb ciemny: @media (prefers-color-scheme: dark) { ... }
    TODO: container query: układ poziomy karty, gdy kontener jest szeroki. */
+
+
+@media (prefers-color-scheme: dark) {
+   body {
+      background-color: #0e141c;
+      color: #f3f5f8;
+   }
+
+   .card {
+      background-color: #1c344c;
+      box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1);
+   }
+
+   .card__tag {
+      color: #e9a23b;
+   }
+
+   .card__link {
+      background-color: #e9a23b;
+      color: #1f3b65;
+   }
+
+   .card__link:hover, .card__link:focus-visible {
+      background-color: var(--kolor-tlo);
+      color: var(--kolor-tekst);
+   }
+}
