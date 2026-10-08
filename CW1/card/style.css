@@ -7,6 +7,7 @@
    TODO: ustaw w :root kolory, odstępy i rozmiar bazowy.
    TODO: ustaw box-sizing: border-box dla wszystkich elementów.
    TODO: ustaw czcionkę i kolor tekstu w body (przykład: system-ui). */
+   
 :root {
   --kolor-glowny: #1f3b65;
   --kolor-akcent: #e9a23b;
@@ -15,6 +16,16 @@
   --odstep: 1rem;
 }
 
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: system-ui, sans-serif;
+   color: var(--kolor-tekst);
+}
+
+
 /* ETAP 2: wygląd karty (mobile-first, jedna kolumna) ---------------------
    TODO: .card: tło, zaokrąglenie, cień, overflow: hidden.
    TODO: .card img: width: 100%; height: auto.
@@ -22,6 +33,7 @@
    TODO: .card__tag: mała etykieta (wielkie litery, kolor akcentu).
    TODO: .card__title: rozmiar z clamp(), np. clamp(1.1rem, 2.5vw, 1.5rem).
    TODO: .card__link: wygląd przycisku; dodaj :hover i :focus-visible. */
+
 
 /* ETAP 3: układ wielu kart (responsywność) -------------------------------
    TODO: .cards jako Grid z odstępem.
