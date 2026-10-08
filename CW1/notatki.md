@@ -37,3 +37,8 @@ Linia **viewport** w index.html określa proporcje (skalowanie) zawartości stro
 | 10. Lighthouse mobile (wydajność / dostępność / dobre praktyki / SEO) | 68 / 100 / 77 / 92  | 80 / 96 / 96 / 100 |
 
 **Wniosek pary (2 zdania):** Obydwie strony mają drobne problemy - gov.pl wypada trochę gorzej w punktach 2. oraz 5., ale muzeumlotnictwa.pl ma problem z punktem 8. oraz 9.. Mimo wszystko obydwie strony wydają się profesjonalnie wykonane.
+
+### Zadanie 2.5
+
+**Wyniki Lighthouse:**
+96 / 100 / 100 / 54
