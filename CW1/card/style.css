@@ -7,7 +7,7 @@
    TODO: ustaw w :root kolory, odstępy i rozmiar bazowy.
    TODO: ustaw box-sizing: border-box dla wszystkich elementów.
    TODO: ustaw czcionkę i kolor tekstu w body (przykład: system-ui). */
-   
+
 :root {
   --kolor-glowny: #1f3b65;
   --kolor-akcent: #e9a23b;
@@ -34,6 +34,47 @@ body {
    TODO: .card__title: rozmiar z clamp(), np. clamp(1.1rem, 2.5vw, 1.5rem).
    TODO: .card__link: wygląd przycisku; dodaj :hover i :focus-visible. */
 
+.card {
+   background-color: var(--kolor-tlo);
+   border-radius: 0.5rem;
+   box-shadow: 0 0.5rem 1rem rgba(1, 10, 88, 0.1);
+   overflow: hidden;
+}
+
+.card img {
+   width: 100%;
+   height: auto;
+}
+
+.card__body {
+   padding: var(--odstep);
+}
+
+.card__tag {
+   text-transform: uppercase;
+   color: var(--kolor-akcent);
+   font-size: 1rem;
+}
+
+.card__title {
+   font-size: clamp(1.1rem, 10vw, 1.5rem);
+}
+
+.card__link {
+   background-color: var(--kolor-glowny);
+   color: white;
+   text-decoration: none;
+   border-radius: 0.5rem;
+   padding: 0.5rem 1rem;
+   display: block;
+   margin: 0.5rem auto;
+   width: fit-content;
+}
+
+.card__link:hover, .card__link:focus-visible {
+   background-color: var(--kolor-akcent);
+   color: var(--kolor-glowny);
+}
 
 /* ETAP 3: układ wielu kart (responsywność) -------------------------------
    TODO: .cards jako Grid z odstępem.
