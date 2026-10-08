@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wydarzenia w mieście – karta wydarzenia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
   <header class="site-header">
@@ -14,38 +16,41 @@
   <main>
     <section class="cards" aria-label="Lista wydarzeń">
 
-      <article class="card">
-        <img src="img/wydarzenie-1.svg" alt="Ilustracja: koncert w sali kameralnej" width="600" height="400">
-        <div class="card__body">
-          <p class="card__tag">Koncert</p>
-          <h2 class="card__title">Wieczór z muzyką filmową</h2>
-          <p class="card__meta"><time datetime="2026-10-17T19:00">17 października 2026, 19:00</time> · Sala Kameralna</p>
-          <p>Orkiestra kameralna wykona fragmenty najsłynniejszych ścieżek dźwiękowych.</p>
-          <a class="card__link" href="#">Szczegóły i bilety</a>
-        </div>
-      </article>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <article class="card">
-        <img src="img/wydarzenie-2.svg" alt="Ilustracja: wystawa fotografii w galerii" width="600" height="400">
-        <div class="card__body">
-          <p class="card__tag">Wystawa</p>
-          <h2 class="card__title">Miasto nocą: fotografia</h2>
-          <p class="card__meta"><time datetime="2026-10-24T12:00">24 października 2026, 12:00</time> · Galeria Główna</p>
-          <p>Prace lokalnych fotografów: ulice, tramwaje i okna po zmroku.</p>
-          <a class="card__link" href="#">Szczegóły i bilety</a>
-        </div>
-      </article>
+        <article class="card">
+          <img src="img/wydarzenie-1.svg" alt="Ilustracja: koncert w sali kameralnej" width="600" height="400">
+          <div class="card__body">
+            <p class="card__tag">Koncert</p>
+            <h2 class="card__title">Wieczór z muzyką filmową</h2>
+            <p class="card__meta"><time datetime="2026-10-17T19:00">17 października 2026, 19:00</time> · Sala Kameralna</p>
+            <p>Orkiestra kameralna wykona fragmenty najsłynniejszych ścieżek dźwiękowych.</p>
+            <a class="card__link" href="#">Szczegóły i bilety</a>
+          </div>
+        </article>
 
-      <article class="card">
-        <img src="img/wydarzenie-3.svg" alt="Ilustracja: warsztaty ceramiczne" width="600" height="400">
-        <div class="card__body">
-          <p class="card__tag">Warsztaty</p>
-          <h2 class="card__title">Ceramika dla początkujących</h2>
-          <p class="card__meta"><time datetime="2026-11-07T10:00">7 listopada 2026, 10:00</time> · Pracownia 2</p>
-          <p>Trzy godziny pracy z gliną. Wszystkie materiały na miejscu.</p>
-          <a class="card__link" href="#">Zapisz się</a>
-        </div>
-      </article>
+        <article class="card">
+          <img src="img/wydarzenie-2.svg" alt="Ilustracja: wystawa fotografii w galerii" width="600" height="400">
+          <div class="card__body">
+            <p class="card__tag">Wystawa</p>
+            <h2 class="card__title">Miasto nocą: fotografia</h2>
+            <p class="card__meta"><time datetime="2026-10-24T12:00">24 października 2026, 12:00</time> · Galeria Główna</p>
+            <p>Prace lokalnych fotografów: ulice, tramwaje i okna po zmroku.</p>
+            <a class="card__link" href="#">Szczegóły i bilety</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/wydarzenie-3.svg" alt="Ilustracja: warsztaty ceramiczne" width="600" height="400">
+          <div class="card__body">
+            <p class="card__tag">Warsztaty</p>
+            <h2 class="card__title">Ceramika dla początkujących</h2>
+            <p class="card__meta"><time datetime="2026-11-07T10:00">7 listopada 2026, 10:00</time> · Pracownia 2</p>
+            <p>Trzy godziny pracy z gliną. Wszystkie materiały na miejscu.</p>
+            <a class="card__link" href="#">Zapisz się</a>
+          </div>
+        </article>
+      </div>
 
     </section>
   </main>
