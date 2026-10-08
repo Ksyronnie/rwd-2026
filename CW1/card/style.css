@@ -23,6 +23,7 @@
 body {
    font-family: system-ui, sans-serif;
    color: var(--kolor-tekst);
+   margin: 0;
 }
 
 
@@ -39,6 +40,8 @@ body {
    border-radius: 0.5rem;
    box-shadow: 0 0.5rem 1rem rgba(1, 10, 88, 0.1);
    overflow: hidden;
+   display: flex;
+   flex-direction: column;
 }
 
 .card img {
@@ -48,6 +51,10 @@ body {
 
 .card__body {
    padding: var(--odstep);
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   gap: var(--odstep);
 }
 
 .card__tag {
@@ -67,7 +74,7 @@ body {
    border-radius: 0.5rem;
    padding: 0.5rem 1rem;
    display: block;
-   margin: 0.5rem auto;
+   margin: auto auto 0;
    width: fit-content;
 }
 
@@ -89,10 +96,40 @@ body {
    margin: var(--odstep);
 }
 
+/* Dodatkowe style - estetyka strony */
+
+.site-header, .site-footer {
+   background-color: var(--kolor-glowny);
+   color: white;
+   text-align: center; 
+} 
+
+.site-header {
+   padding-top: 1rem;
+   padding-bottom: 1.5rem;
+   margin-bottom: 3rem;
+}
+
+h1 {
+   text-transform: uppercase;
+   font-weight: bold;
+   color: var(--kolor-akcent);
+   font-size: clamp(1.3rem, 7vw, 2rem);
+}
+
+.site-footer {
+   padding: var(--odstep);
+   margin-top: 3rem;
+   color: var(--kolor-akcent);
+}
+
+.card__meta {
+   color: rgb(26 36 51 / 70%);
+}
+
 /* ETAP 4 (dla chętnych) ---------------------------------------------------
    TODO: tryb ciemny: @media (prefers-color-scheme: dark) { ... }
    TODO: container query: układ poziomy karty, gdy kontener jest szeroki. */
-
 
 @media (prefers-color-scheme: dark) {
    body {
@@ -117,5 +154,9 @@ body {
    .card__link:hover, .card__link:focus-visible {
       background-color: var(--kolor-tlo);
       color: var(--kolor-tekst);
+   }
+
+   .card__meta {
+   color: rgb(255 255 255 / 70%);
    }
 }
